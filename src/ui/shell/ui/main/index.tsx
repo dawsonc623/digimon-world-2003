@@ -18,17 +18,11 @@ import {
 
 import "./index.scss";
 
-interface ShellMainProps {
-
-}
-
-export default function ShellMain(
-  _props: ShellMainProps
-): ReactElement {
-  const renderHome = (): ReactElement => {
+export default function ShellMain() : ReactElement {
+  const renderHome = () : ReactElement => {
     return (
       <p>Hello, World!</p>
-    )
+    );
   };
 
   return (

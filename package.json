@@ -8,6 +8,7 @@
   "private": true,
   "scripts": {
     "build-prod": "webpack --config webpack.prod.js",
+    "lint": "eslint 'src/**/*.ts' 'src/**/*.tsx'",
     "start-dev": "SASS_PATH=node_modules webpack-dev-server --config webpack.dev.js"
   },
   "dependencies": {
