@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx"
+  ]
+}

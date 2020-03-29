@@ -1,0 +1,63 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+
+    "plugin:@typescript-eslint/recommended",
+
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+
+    "plugin:react/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "react",
+    "react-hooks"
+  ],
+  "rules": {
+    "@typescript-eslint/accessibility"  : "error",
+    "@typescript-eslint/indent": [
+      "error",
+      2
+    ],
+    "@typescript-eslint/no-parameter-properties": "off",
+    "@typescript-eslint/type-annotation-spacing": [
+      "error",
+      {
+        "before": true
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "prefer-const": "error",
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "semi": [
+      "error",
+      "always"
+    ],
+
+    "no-undef": "off"
+  },
+  "settings": {
+    "react" : {
+      "version" : "detect"
+    }
+  }
+}

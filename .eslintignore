@@ -1,0 +1,3 @@
+# Ignore anything outside of the packages' src directories
+*
+!src/*
