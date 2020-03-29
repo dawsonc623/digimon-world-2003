@@ -8,33 +8,48 @@ import {
   Switch
 } from "react-router-dom";
 
+import {
+  TopAppBar,
+  TopAppBarFixedAdjust,
+  TopAppBarRow,
+  TopAppBarSection,
+  TopAppBarTitle
+} from "@rmwc/top-app-bar";
+
 import "./index.scss";
 
-interface ShellMainProps
-{
+interface ShellMainProps {
 
 }
 
 export default function ShellMain(
-  _props : ShellMainProps
-) : ReactElement
-{
-  const renderHome = () : ReactElement =>
-  {
+  _props: ShellMainProps
+): ReactElement {
+  const renderHome = (): ReactElement => {
     return (
       <p>Hello, World!</p>
     )
   };
 
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route
-          exact   = {true}
-          path    = "/"
-          render  = {renderHome}
-        />
-      </Switch>
-    </BrowserRouter>
+    <>
+      <TopAppBar>
+        <TopAppBarRow>
+          <TopAppBarSection>
+            <TopAppBarTitle>Digimon World 3/2003</TopAppBarTitle>
+          </TopAppBarSection>
+        </TopAppBarRow>
+      </TopAppBar>
+      <TopAppBarFixedAdjust />
+      <BrowserRouter>
+        <Switch>
+          <Route
+            exact={true}
+            path="/"
+            render={renderHome}
+          />
+        </Switch>
+      </BrowserRouter>
+    </>
   );
 }

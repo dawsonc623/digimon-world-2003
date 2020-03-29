@@ -1,4 +1,4 @@
-import Shell  from "./ui/main";
+import Shell from "./ui/main";
 
 export {
   Shell
